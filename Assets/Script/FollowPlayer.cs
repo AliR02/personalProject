@@ -8,7 +8,7 @@ public class FollowPlayer : MonoBehaviour
     public float mouseSensitivity = 2f;
     float cameraVerticalRotation = 0f;
 
-    bool lockedCursor = true;
+    //bool lockedCursor = true;
 
 
     // Start is called before the first frame update
@@ -38,5 +38,7 @@ public class FollowPlayer : MonoBehaviour
         // Rotate the Player Object and the Camera around its Y axis
 
         player.Rotate(Vector3.up * inputX);
+        
+      
     }
 }

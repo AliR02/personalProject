@@ -11,9 +11,11 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeZ = 120;
 
     private float starDelay = 5;
-    private float spawnInterval = 1.5f;
+    private float spawnInterval = 10.5f;
 
     private PlayerController playerControllerScript;
+    public bool gameOver = false;
+
 
 
     // Start is called before the first frame update
