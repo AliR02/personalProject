@@ -14,8 +14,8 @@ public class FollowPlayer : MonoBehaviour
     void Start()
     {
         // Lock and Hide the Cursor
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
 
     }
 

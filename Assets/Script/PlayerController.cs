@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip crashSound;
     private AudioSource playerAudio;
     public bool gameOver = false;
+    public string SceneName;
    
 
     // Start is called before the first frame update
@@ -41,9 +43,11 @@ public class PlayerController : MonoBehaviour
         {
 
             gameOver = true;
-            Debug.Log("Game Over!");
+           // Debug.Log("Starting Again!");
 
             playerAudio.PlayOneShot(crashSound, 1.0f);
+
+            SceneManager.LoadScene(SceneName);
 
         }
 
